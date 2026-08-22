@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "havok-ps4-pipeline"
+version = "0.1.0"
+description = "Convert supported Fallout 4 PC behavior HKX packfiles to the PS4 layout"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "DevNvll" }]
+dependencies = []
+
+[project.scripts]
+hkx-behavior-to-ps4 = "havok_ps4.cli:main"
+
+[project.urls]
+Repository = "https://github.com/DevNvll/havok-ps4-pipeline"
+
+[tool.setuptools.packages.find]
+include = ["havok_ps4*"]
