@@ -1,0 +1,24 @@
+<class name='BGSGamebryoSequenceGenerator' version='2' signature='0x4e708fb6' parent='hkbGenerator'>
+	<enums>
+		<enum name='BlendModeFunction' flags='00000000'>
+			<enumitem name='BMF_NONE' value='0'/>
+			<enumitem name='BMF_PERCENT' value='1'/>
+			<enumitem name='BMF_ONE_MINUS_PERCENT' value='2'/>
+		</enum>
+		<enum name='UseTimeVariable' flags='00000000'>
+			<enumitem name='NOT_USING_TIME_PERCENTAGE' value='0'/>
+			<enumitem name='USING_TIME_PERCENTAGE' value='1'/>
+		</enum>
+	</enums>
+	<members>
+		<member name='pSequence' type='char*' offset='136' vtype='TYPE_CSTRING' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='eBlendModeFunction' type='enum BlendModeFunction' etype='BlendModeFunction' offset='144' vtype='TYPE_ENUM' vsubtype='TYPE_INT8' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='fPercent' type='hkReal' offset='148' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='eUseTimePercentage' type='enum UseTimeVariable' etype='UseTimeVariable' offset='152' vtype='TYPE_ENUM' vsubtype='TYPE_INT8' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='fTimePercent' type='hkReal' offset='156' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='events' type='hkArray&lt;void&gt;' offset='160' vtype='TYPE_ARRAY' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='fTime' type='hkReal' offset='176' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='bDelayedActivate' type='hkBool' offset='180' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='bLooping' type='hkBool' offset='181' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

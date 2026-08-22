@@ -3,3 +3,4 @@
 *.md text eol=lf
 *.toml text eol=lf
 *.yml text eol=lf
+havok_ps4/classxml/*.xml text eol=lf

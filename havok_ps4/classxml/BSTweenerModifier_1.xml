@@ -1,0 +1,13 @@
+<class name='BSTweenerModifier' version='1' signature='0xfe0a9cb4' parent='hkbModifier'>
+	<members>
+		<member name='tweenPosition' type='hkBool' offset='88' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='tweenRotation' type='hkBool' offset='89' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='useTweenDuration' type='hkBool' offset='90' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='tweenDuration' type='hkReal' offset='92' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='targetPosition' type='hkVector4' offset='96' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='targetRotation' type='hkQuaternion' offset='112' vtype='TYPE_QUATERNION' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='duration' type='hkReal' offset='128' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='startTransform' type='hkQsTransform' offset='144' vtype='TYPE_QSTRANSFORM' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='time' type='hkReal' offset='192' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

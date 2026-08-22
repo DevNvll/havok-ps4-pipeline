@@ -1,0 +1,5 @@
+<class name='BSGetTimeStepModifier' version='0' signature='0x56341150' parent='hkbModifier'>
+	<members>
+		<member name='timeStep' type='hkReal' offset='88' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+	</members>
+</class>

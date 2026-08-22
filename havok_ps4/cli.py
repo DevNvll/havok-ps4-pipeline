@@ -11,6 +11,8 @@ from .errors import ConversionError
 from .files import convert_files, file_jobs
 from .layout import ClassDatabase
 
+DEFAULT_CLASS_DATABASE = Path(__file__).resolve().with_name("classxml")
+
 
 def make_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
@@ -25,8 +27,8 @@ def make_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--class-db",
         type=Path,
-        required=True,
-        help="Folder that contains your local Havok class XML files",
+        default=DEFAULT_CLASS_DATABASE,
+        help="Class XML folder (default: bundled class data)",
     )
     return parser
 

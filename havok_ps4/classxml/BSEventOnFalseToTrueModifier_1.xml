@@ -1,0 +1,16 @@
+<class name='BSEventOnFalseToTrueModifier' version='1' signature='0x921ad1a5' parent='hkbModifier'>
+	<members>
+		<member name='bEnableEvent1' type='hkBool' offset='88' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='bVariableToTest1' type='hkBool' offset='89' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='EventToSend1' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='96' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='bEnableEvent2' type='hkBool' offset='112' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='bVariableToTest2' type='hkBool' offset='113' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='EventToSend2' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='120' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='bEnableEvent3' type='hkBool' offset='136' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='bVariableToTest3' type='hkBool' offset='137' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='EventToSend3' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='144' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='bSlot1ActivatedLastFrame' type='hkBool' offset='160' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='bSlot2ActivatedLastFrame' type='hkBool' offset='161' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='bSlot3ActivatedLastFrame' type='hkBool' offset='162' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

@@ -1,0 +1,9 @@
+<class name='BSInterpValueModifier' version='0' signature='0x4c10e936' parent='hkbModifier'>
+	<members>
+		<member name='source' type='hkReal' offset='88' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='target' type='hkReal' offset='92' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='result' type='hkReal' offset='96' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='gain' type='hkReal' offset='100' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='timeStep' type='hkReal' offset='104' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

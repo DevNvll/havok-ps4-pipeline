@@ -20,3 +20,6 @@ Repository = "https://github.com/DevNvll/havok-ps4-pipeline"
 
 [tool.setuptools.packages.find]
 include = ["havok_ps4*"]
+
+[tool.setuptools.package-data]
+havok_ps4 = ["classxml/*.xml", "classxml/*.txt"]

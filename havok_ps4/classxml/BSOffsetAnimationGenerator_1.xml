@@ -1,0 +1,15 @@
+<class name='BSOffsetAnimationGenerator' version='1' signature='0x1fc841a6' parent='hkbGenerator'>
+	<members>
+		<member name='pDefaultGenerator' type='struct hkbGenerator*' ctype='hkbGenerator' offset='144' vtype='TYPE_POINTER' vsubtype='TYPE_STRUCT' arrsize='0' flags='ALIGN_16'/>
+		<member name='pOffsetClipGenerator' type='struct hkbGenerator*' ctype='hkbGenerator' offset='160' vtype='TYPE_POINTER' vsubtype='TYPE_STRUCT' arrsize='0' flags='ALIGN_16'/>
+		<member name='fOffsetVariable' type='hkReal' offset='168' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='fOffsetRangeStart' type='hkReal' offset='172' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='fOffsetRangeEnd' type='hkReal' offset='176' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='1.000000'/>
+		<member name='BoneOffsetA' type='hkArray&lt;void&gt;' offset='184' vtype='TYPE_ARRAY' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='BoneIndexA' type='hkArray&lt;void&gt;' offset='200' vtype='TYPE_ARRAY' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='fCurrentPercentage' type='hkReal' offset='216' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='iCurrentFrame' type='hkUint32' offset='220' vtype='TYPE_UINT32' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='bZeroOffset' type='hkBool' offset='224' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='bOffsetValid' type='hkBool' offset='225' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

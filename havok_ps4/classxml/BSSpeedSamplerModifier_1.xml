@@ -1,0 +1,8 @@
+<class name='BSSpeedSamplerModifier' version='1' signature='0x6b1abbe7' parent='hkbModifier'>
+	<members>
+		<member name='state' type='hkInt32' offset='88' vtype='TYPE_INT32' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='direction' type='hkReal' offset='92' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='goalSpeed' type='hkReal' offset='96' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='speedOut' type='hkReal' offset='100' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+	</members>
+</class>

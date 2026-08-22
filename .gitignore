@@ -12,7 +12,7 @@ dist/
 venv/
 
 # Local converter data
-classxml/
+/classxml/
 *.hkx
 *.ba2
 *.nif

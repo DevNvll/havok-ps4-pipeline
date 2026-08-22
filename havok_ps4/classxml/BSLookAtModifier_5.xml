@@ -1,0 +1,53 @@
+<class name='BSLookAtModifier' version='5' signature='0x5901a37d' parent='hkbModifier'>
+	<enums>
+		<enum name='TARGET' flags='00000000'>
+			<enumitem name='Default' value='0'/>
+			<enumitem name='AppSupplied' value='1'/>
+			<enumitem name='Camera' value='2'/>
+		</enum>
+		<enum name='CHARACTER_TYPE' flags='00000000'>
+			<enumitem name='Generic' value='0'/>
+			<enumitem name='Biped' value='1'/>
+		</enum>
+	</enums>
+	<members>
+		<member name='additive' type='hkBool' offset='88' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='clampAdditive' type='hkBool' offset='89' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='target' type='enum TARGET' etype='TARGET' offset='90' vtype='TYPE_ENUM' vsubtype='TYPE_INT8' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='HeadTrackingOn1' type='hkBool' offset='91' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='HeadTrackingOn2' type='hkBool' offset='92' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='characterType' type='enum CHARACTER_TYPE' etype='CHARACTER_TYPE' offset='93' vtype='TYPE_ENUM' vsubtype='TYPE_INT8' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='rootBone' type='struct BSLookAtModifierBoneData' ctype='BSLookAtModifierBoneData' offset='96' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='bones' type='hkArray&lt;struct BSLookAtModifierBoneData&gt;' ctype='BSLookAtModifierBoneData' offset='624' vtype='TYPE_ARRAY' vsubtype='TYPE_STRUCT' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='eyeBones' type='hkArray&lt;struct BSLookAtModifierBoneData&gt;' ctype='BSLookAtModifierBoneData' offset='640' vtype='TYPE_ARRAY' vsubtype='TYPE_STRUCT' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='useIndividualLimitAngles' type='hkBool' offset='656' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='limitAngleThresholdDegrees' type='hkReal' offset='660' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='continueLookOutsideOfLimit' type='hkBool' offset='664' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='onGain' type='hkReal' offset='668' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.050000'/>
+		<member name='offGain' type='hkReal' offset='672' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.050000'/>
+		<member name='onLeadIn' type='hkReal' offset='676' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='1.000000'/>
+		<member name='offLeadIn' type='hkReal' offset='680' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='1.000000'/>
+		<member name='useBoneGains' type='hkBool' offset='684' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='refPoseBlendGain' type='hkReal' offset='688' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.050000'/>
+		<member name='restoreDefaultRefPosEventId' type='hkInt32' offset='692' vtype='TYPE_INT32' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='targetLocation' type='hkVector4' offset='704' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='targetOutsideLimits' type='hkBool' offset='720' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='targetOutOfLimitEvent' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='728' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='snapToTargetEventId' type='hkInt32' offset='744' vtype='TYPE_INT32' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='lookActive' type='hkBool' offset='748' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='modificationActive' type='hkBool' offset='749' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='lookAtCameraX' type='hkReal' offset='752' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='lookAtCameraY' type='hkReal' offset='756' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='lookAtCameraZ' type='hkReal' offset='760' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='drawDebugInfo' type='hkBool' offset='764' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='prevLookAtTarget' type='hkBool' offset='765' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='targetOutsideLimitsPrev' type='hkBool' offset='766' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='buseCustomRefPose' type='hkBool' offset='767' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='refPoseGain' type='hkReal' offset='768' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='snapToTarget' type='hkBool' offset='772' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='timeStep' type='hkReal' offset='776' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='curLookAtTarget' type='hkBool' offset='780' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='curTargetLocation' type='hkVector4' offset='784' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='ballBonesValid' type='hkBool' offset='800' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

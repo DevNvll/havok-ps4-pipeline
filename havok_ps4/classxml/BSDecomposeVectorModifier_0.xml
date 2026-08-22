@@ -1,0 +1,9 @@
+<class name='BSDecomposeVectorModifier' version='0' signature='0xadfcbce2' parent='hkbModifier'>
+	<members>
+		<member name='vector' type='hkVector4' offset='96' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='x' type='hkReal' offset='112' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='y' type='hkReal' offset='116' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='z' type='hkReal' offset='120' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='w' type='hkReal' offset='124' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+	</members>
+</class>

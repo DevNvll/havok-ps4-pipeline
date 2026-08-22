@@ -16,33 +16,33 @@ The tool supports these inputs:
 - Havok `hk_2014.1.0-r1`
 - Packfile version 11
 - 64-bit, little-endian PC layout `08 01 00 01`
-- Behavior classes that exist in the user-supplied class XML database
+- Behavior classes that exist in the bundled or selected class XML database
 
 The tool does not convert animation, character, project, or skeleton HKX files.
 It does not support behavior imports or exports.
 
-## Required class data
+## Bundled class data
 
-This repository does not distribute extracted Havok or Fallout class metadata.
-You must supply a local `classxml` folder. The folder must use the HKXPack class
-XML format and contain files named `<ClassName>_<version>.xml`.
+The package includes 908 class XML definitions from HkxPack-Plus commit
+`8922f45a69f33b812215782670f84b095abfad0f`. The converter uses this data by
+default. See [THIRD_PARTY.md](THIRD_PARTY.md) for its source and license.
 
-Use class metadata only when you have the right to obtain and use it. Keep the
-folder outside Git, or place it in `classxml/`. The `.gitignore` file excludes
-that folder.
+Use `--class-db /path/to/classxml` only when you want to use a different class
+database. The folder must use the HKXPack class XML format and contain files
+named `<ClassName>_<version>.xml`.
 
 ## Convert one file
 
 Run this command on Windows:
 
 ```text
-py -3 hkx_behavior_to_ps4.py input\Behavior.hkx output\Behavior.hkx --class-db C:\path\to\classxml
+py -3 hkx_behavior_to_ps4.py input\Behavior.hkx output\Behavior.hkx
 ```
 
 Run this command on Linux or macOS:
 
 ```text
-python3 hkx_behavior_to_ps4.py input/Behavior.hkx output/Behavior.hkx --class-db /path/to/classxml
+python3 hkx_behavior_to_ps4.py input/Behavior.hkx output/Behavior.hkx
 ```
 
 Add `--force` to replace an existing output file.
@@ -50,7 +50,7 @@ Add `--force` to replace an existing output file.
 ## Convert a folder
 
 ```text
-python3 hkx_behavior_to_ps4.py input_folder output_folder --class-db /path/to/classxml
+python3 hkx_behavior_to_ps4.py input_folder output_folder
 ```
 
 Add `-r` to read subfolders.
@@ -64,11 +64,11 @@ Python 3.10 or later is required.
 
 ```text
 python3 -m pip install .
-hkx-behavior-to-ps4 input.hkx output.hkx --class-db /path/to/classxml
+hkx-behavior-to-ps4 input.hkx output.hkx
 ```
 
 The converter has no run-time dependencies outside the Python standard
-library. It rejects DTDs and entity declarations in user-supplied class XML.
+library. It rejects DTDs and entity declarations in class XML.
 
 ## File safety
 
@@ -90,8 +90,9 @@ The repository contains no copied game test data.
 
 ## License and project status
 
-The source code and synthetic tests use the MIT license. See [LICENSE](LICENSE)
-and [NOTICE.md](NOTICE.md).
+The source code and synthetic tests use the MIT license. The bundled class XML
+data keeps its upstream license and attribution. See [LICENSE](LICENSE),
+[NOTICE.md](NOTICE.md), and [THIRD_PARTY.md](THIRD_PARTY.md).
 
 This independent project is not affiliated with Bethesda, Microsoft, Havok,
-or Sony. Users must supply legally obtained input and metadata files.
+or Sony. Users must supply legally obtained input files.

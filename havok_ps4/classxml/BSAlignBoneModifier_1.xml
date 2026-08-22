@@ -1,0 +1,24 @@
+<class name='BSAlignBoneModifier' version='1' signature='0x4c3d9d17' parent='hkbModifier'>
+	<enums>
+		<enum name='CONTEXT' flags='00000000'>
+			<enumitem name='None' value='0'/>
+			<enumitem name='WeaponGrip' value='1'/>
+		</enum>
+	</enums>
+	<members>
+		<member name='context' type='enum CONTEXT' etype='CONTEXT' offset='88' vtype='TYPE_ENUM' vsubtype='TYPE_INT8' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='boneIndex' type='hkInt16' offset='90' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='targetName' type='hkStringPtr' offset='96' vtype='TYPE_STRINGPTR' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='rotation' type='hkBool' offset='104' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='translation' type='hkBool' offset='105' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='mirrored' type='hkBool' offset='106' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='weaponBoneIndex' type='hkInt16' offset='108' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='weaponMirroredBoneIndex' type='hkInt16' offset='110' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='debugVisuals' type='hkBool' offset='112' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='debugMode' type='hkBool' offset='113' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='debugTargetLocation' type='hkVector4' offset='128' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='debugTargetRotation' type='hkQuaternion' offset='144' vtype='TYPE_QUATERNION' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='hasTarget' type='hkBool' offset='160' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='targetMS' type='hkQsTransform' offset='176' vtype='TYPE_QSTRANSFORM' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

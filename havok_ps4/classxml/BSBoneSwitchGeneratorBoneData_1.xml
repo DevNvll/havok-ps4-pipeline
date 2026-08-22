@@ -1,0 +1,6 @@
+<class name='BSBoneSwitchGeneratorBoneData' version='1' signature='0x0977b904' parent='hkbBindable'>
+	<members>
+		<member name='pGenerator' type='struct hkbGenerator*' ctype='hkbGenerator' offset='48' vtype='TYPE_POINTER' vsubtype='TYPE_STRUCT' arrsize='0' flags='ALIGN_16'/>
+		<member name='spBoneWeight' type='struct hkbBoneWeightArray*' ctype='hkbBoneWeightArray' offset='56' vtype='TYPE_POINTER' vsubtype='TYPE_STRUCT' arrsize='0' flags='FLAGS_NONE'/>
+	</members>
+</class>

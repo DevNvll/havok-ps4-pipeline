@@ -9,10 +9,20 @@ sys.path.insert(0, str(ROOT / "test"))
 
 from synthetic_packfile import make_class_database
 
+from havok_ps4.cli import DEFAULT_CLASS_DATABASE, make_parser
 from hkx_behavior_to_ps4 import ClassDatabase, ConversionError
 
 
 class SyntheticLayoutTests(unittest.TestCase):
+    def test_cli_uses_bundled_class_database(self):
+        args = make_parser().parse_args(["input.hkx", "output.hkx"])
+        self.assertEqual(args.class_db, DEFAULT_CLASS_DATABASE)
+        self.assertTrue((args.class_db / "hkbBehaviorGraph_1.xml").is_file())
+
+        layout = ClassDatabase(args.class_db).get("hkbBehaviorGraph")
+        self.assertEqual(layout.pc_size, 432)
+        self.assertEqual(layout.ps4_size, 424)
+
     def test_base_tail_padding_is_reused_for_ps4(self):
         with tempfile.TemporaryDirectory() as folder:
             database = make_class_database(Path(folder))

@@ -32,7 +32,7 @@ def parse_class_xml(path: Path) -> ET.Element:
         root = ET.fromstring(text)  # nosec B314
     except ET.ParseError as exc:
         raise ConversionError(f"Class data is invalid: {path}") from exc
-    if root.tag != "class":
+    if root.tag not in {"class", "struct"}:
         raise ConversionError(f"Class data has an invalid root element: {path}")
     return root
 

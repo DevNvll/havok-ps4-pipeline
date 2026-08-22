@@ -1,0 +1,5 @@
+<struct name='hkCustomAttributes' version='0' signature='0xbff19005'>
+	<members>
+		<member name='attributes' type='hkSimpleArray&lt;struct hkCustomAttributesAttribute&gt;' ctype='hkCustomAttributesAttribute' offset='0' vtype='TYPE_SIMPLEARRAY' vsubtype='TYPE_STRUCT' arrsize='0' flags='FLAGS_NONE'/>
+	</members>
+</struct>

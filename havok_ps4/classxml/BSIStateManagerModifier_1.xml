@@ -1,0 +1,7 @@
+<class name='BSIStateManagerModifier' version='1' signature='0x0f58a337' parent='hkbModifier'>
+	<members>
+		<member name='iStateVar' type='hkInt32' offset='88' vtype='TYPE_INT32' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0'/>
+		<member name='stateData' type='hkArray&lt;struct BSIStateManagerModifierBSiStateData&gt;' ctype='BSIStateManagerModifierBSiStateData' offset='96' vtype='TYPE_ARRAY' vsubtype='TYPE_STRUCT' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='myStateListener' type='struct BSIStateManagerModifierBSIStateManagerStateListener' ctype='BSIStateManagerModifierBSIStateManagerStateListener' offset='112' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

@@ -1,0 +1,7 @@
+<class name='BSRagdollContactListenerModifier' version='0' signature='0x7e6d66c9' parent='hkbModifier'>
+	<members>
+		<member name='contactEvent' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='88' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='bones' type='struct hkbBoneIndexArray*' ctype='hkbBoneIndexArray' offset='104' vtype='TYPE_POINTER' vsubtype='TYPE_STRUCT' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='throwEvent' type='hkBool' offset='112' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

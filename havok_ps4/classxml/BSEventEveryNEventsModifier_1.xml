@@ -1,0 +1,11 @@
+<class name='BSEventEveryNEventsModifier' version='1' signature='0x0320ef75' parent='hkbModifier'>
+	<members>
+		<member name='eventToCheckFor' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='88' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='eventToSend' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='104' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='numberOfEventsBeforeSend' type='hkInt8' offset='120' vtype='TYPE_INT8' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='1'/>
+		<member name='minimumNumberOfEventsBeforeSend' type='hkInt8' offset='121' vtype='TYPE_INT8' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='1'/>
+		<member name='randomizeNumberOfEvents' type='hkBool' offset='122' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='numberOfEventsSeen' type='hkInt32' offset='124' vtype='TYPE_INT32' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='calculatedNumberOfEventsBeforeSend' type='hkInt8' offset='128' vtype='TYPE_INT8' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

@@ -1,0 +1,14 @@
+<class name='BSIsActiveModifier' version='1' signature='0x5bf1f5cf' parent='hkbModifier'>
+	<members>
+		<member name='bIsActive0' type='hkBool' offset='88' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='bInvertActive0' type='hkBool' offset='89' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='bIsActive1' type='hkBool' offset='90' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='bInvertActive1' type='hkBool' offset='91' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='bIsActive2' type='hkBool' offset='92' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='bInvertActive2' type='hkBool' offset='93' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='bIsActive3' type='hkBool' offset='94' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='bInvertActive3' type='hkBool' offset='95' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='bIsActive4' type='hkBool' offset='96' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='bInvertActive4' type='hkBool' offset='97' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+	</members>
+</class>

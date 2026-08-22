@@ -1,0 +1,5 @@
+<class name='BSIStateManagerModifierBSIStateManagerStateListener' version='0' signature='0x62185808' parent='hkbStateListener'>
+	<members>
+		<member name='pStateManager' type='void*' offset='16' vtype='TYPE_POINTER' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

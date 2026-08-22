@@ -1,0 +1,13 @@
+<class name='BSLimbIKModifier' version='0' signature='0xd095b971' parent='hkbModifier'>
+	<members>
+		<member name='limitAngleDegrees' type='hkReal' offset='88' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='90.000000'/>
+		<member name='currentAngle' type='hkReal' offset='92' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='startBoneIndex' type='hkInt16' offset='96' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='endBoneIndex' type='hkInt16' offset='98' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='gain' type='hkReal' offset='100' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.500000'/>
+		<member name='boneRadius' type='hkReal' offset='104' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.800000'/>
+		<member name='castOffset' type='hkReal' offset='108' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='3.000000'/>
+		<member name='timeStep' type='hkReal' offset='112' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='pSkeletonMemory' type='void*' offset='120' vtype='TYPE_POINTER' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

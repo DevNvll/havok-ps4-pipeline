@@ -1,0 +1,9 @@
+<class name='BSComputeAddBoneAnimModifier' version='1' signature='0x1abc249d' parent='hkbModifier'>
+	<members>
+		<member name='boneIndex' type='hkInt16' offset='88' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='translationLSOut' type='hkVector4' offset='96' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='rotationLSOut' type='hkQuaternion' offset='112' vtype='TYPE_QUATERNION' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='scaleLSOut' type='hkVector4' offset='128' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='pSkeletonMemory' type='void*' offset='144' vtype='TYPE_POINTER' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

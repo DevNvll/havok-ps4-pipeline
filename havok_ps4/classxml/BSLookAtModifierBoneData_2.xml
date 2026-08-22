@@ -1,0 +1,47 @@
+<struct name='BSLookAtModifierBoneData' version='2' signature='0xf3b4d9be'>
+	<enums>
+		<enum name='AXIS_COLOR' flags='00000000'>
+			<enumitem name='Red' value='0'/>
+			<enumitem name='Green' value='1'/>
+			<enumitem name='Blue' value='2'/>
+		</enum>
+	</enums>
+	<members>
+		<member name='index' type='hkInt16' offset='0' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='fwdAxisLS' type='hkVector4' offset='16' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='upAxisLS' type='hkVector4' offset='32' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='specifyAxesByColor' type='hkBool' offset='48' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='forwardAxisColor' type='enum AXIS_COLOR' etype='AXIS_COLOR' offset='49' vtype='TYPE_ENUM' vsubtype='TYPE_INT8' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='upAxisColor' type='enum AXIS_COLOR' etype='AXIS_COLOR' offset='50' vtype='TYPE_ENUM' vsubtype='TYPE_INT8' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='limitAngleDegrees' type='hkReal' offset='52' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='180.000000'/>
+		<member name='limitAngleDegreesLeft' type='hkReal' offset='56' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='180.000000'/>
+		<member name='limitAngleDegreesRight' type='hkReal' offset='60' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='180.000000'/>
+		<member name='limitAngleDegreesUp' type='hkReal' offset='64' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='90.000000'/>
+		<member name='limitAngleDegreesDown' type='hkReal' offset='68' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='90.000000'/>
+		<member name='onGain' type='hkReal' offset='72' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.050000'/>
+		<member name='offGain' type='hkReal' offset='76' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.050000'/>
+		<member name='onLeadIn' type='hkReal' offset='80' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='1.000000'/>
+		<member name='offLeadIn' type='hkReal' offset='84' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='1.000000'/>
+		<member name='rotateAboutAxes' type='hkBool' offset='88' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='enabled' type='hkBool' offset='89' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='drawDebugInfo' type='hkBool' offset='90' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='axisFwdLS' type='hkVector4' offset='96' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='axisUpLS' type='hkVector4' offset='112' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='axisSideLS' type='hkVector4' offset='128' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='currentFwdAxisLS' type='hkVector4' offset='144' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='currentRotMS' type='hkQuaternion' offset='160' vtype='TYPE_QUATERNION' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='currentGain' type='hkReal' offset='176' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='defaultRefTransformMS' type='hkQsTransform' offset='192' vtype='TYPE_QSTRANSFORM' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='defaultRefTransformLS' type='hkQsTransform' offset='240' vtype='TYPE_QSTRANSFORM' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='defaultOffsetFwd' type='hkReal' offset='288' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='defaultOffsetVert' type='hkReal' offset='292' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='customRefTransformMS' type='hkQsTransform' offset='304' vtype='TYPE_QSTRANSFORM' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='customRefTransformLS' type='hkQsTransform' offset='352' vtype='TYPE_QSTRANSFORM' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='customOffsetFwd' type='hkReal' offset='400' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='customOffsetVert' type='hkReal' offset='404' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='currentRefTransformMS' type='hkQsTransform' offset='416' vtype='TYPE_QSTRANSFORM' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='currentRefTransformLS' type='hkQsTransform' offset='464' vtype='TYPE_QSTRANSFORM' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='currentOffsetFwd' type='hkReal' offset='512' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='currentOffsetVert' type='hkReal' offset='516' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</struct>

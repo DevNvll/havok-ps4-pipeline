@@ -1,0 +1,9 @@
+<class name='BSRandomAlarmModifier' version='0' signature='0x550fec31' parent='hkbModifier'>
+	<members>
+		<member name='alarmTimeSecondsMin' type='hkReal' offset='88' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='alarmTimeSecondsMax' type='hkReal' offset='92' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='1.000000'/>
+		<member name='alarmEvent' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='96' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='resetAlarm' type='hkBool' offset='112' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='secondsRemaining' type='hkReal' offset='116' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

@@ -1,0 +1,13 @@
+<class name='BSRootTwistModifier' version='1' signature='0xcbc0b864' parent='hkbModifier'>
+	<enums>
+		<enum name='SetTwistMethod' flags='00000000'>
+			<enumitem name='ANGLE_DEGREES' value='0'/>
+			<enumitem name='DIRECTION' value='1'/>
+		</enum>
+	</enums>
+	<members>
+		<member name='rootTwistAngle' type='hkReal' offset='88' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='twistType' type='enum SetTwistMethod' etype='SetTwistMethod' offset='92' vtype='TYPE_ENUM' vsubtype='TYPE_INT8' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='calculatedRotation' type='hkQsTransform' offset='96' vtype='TYPE_QSTRANSFORM' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

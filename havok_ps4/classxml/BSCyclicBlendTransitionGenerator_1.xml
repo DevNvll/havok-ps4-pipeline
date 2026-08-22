@@ -1,0 +1,27 @@
+<class name='BSCyclicBlendTransitionGenerator' version='1' signature='0x86401931' parent='hkbGenerator'>
+	<enums>
+		<enum name='CurrentBlendMode' flags='00000000'>
+			<enumitem name='MODE_INACTIVE' value='-1'/>
+			<enumitem name='MODE_DEFAULT' value='0'/>
+			<enumitem name='MODE_FROZEN' value='1'/>
+			<enumitem name='MODE_BLENDING' value='2'/>
+			<enumitem name='MODE_WAITINGFORBLENDING' value='3'/>
+			<enumitem name='MODE_LOCKED' value='4'/>
+			<enumitem name='MODE_LOCKED_WAITINGFORBLENDING' value='5'/>
+		</enum>
+	</enums>
+	<members>
+		<member name='pBlenderGenerator' type='struct hkbGenerator*' ctype='hkbGenerator' offset='144' vtype='TYPE_POINTER' vsubtype='TYPE_STRUCT' arrsize='0' flags='ALIGN_16'/>
+		<member name='EventToFreezeBlendValue' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='152' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='EventToCrossBlend' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='168' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='TransitionOutEvent' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='184' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='TransitionInEvent' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='200' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='fBlendParameter' type='hkReal' offset='216' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='fTransitionDuration' type='hkReal' offset='220' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.400000'/>
+		<member name='eBlendCurve' type='enum BlendCurve' etype='BlendCurve' offset='224' vtype='TYPE_ENUM' vsubtype='TYPE_INT8' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='pTransitionBlenderGeneratorsA' type='hkArray&lt;void*&gt;' offset='232' vtype='TYPE_ARRAY' vsubtype='TYPE_POINTER' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='sortedChildren' type='hkArray&lt;void&gt;' offset='248' vtype='TYPE_ARRAY' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='pTempOutput' type='void*' offset='264' vtype='TYPE_POINTER' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='currentMode' type='enum unknown' offset='272' vtype='TYPE_ENUM' vsubtype='TYPE_INT8' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

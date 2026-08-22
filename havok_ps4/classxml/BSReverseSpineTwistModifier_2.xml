@@ -1,0 +1,22 @@
+<class name='BSReverseSpineTwistModifier' version='2' signature='0xfc8adeda' parent='hkbModifier'>
+	<members>
+		<member name='isAdditive' type='hkBool' offset='88' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='COMIndex' type='hkInt16' offset='90' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='Bone0Index' type='hkInt16' offset='92' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='Bone0Translate' type='hkVector4' offset='96' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='Bone0Rotate' type='hkQuaternion' offset='112' vtype='TYPE_QUATERNION' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='Bone1Index' type='hkInt16' offset='128' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='Bone1Translate' type='hkVector4' offset='144' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='Bone1Rotate' type='hkQuaternion' offset='160' vtype='TYPE_QUATERNION' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='Bone2Index' type='hkInt16' offset='176' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='RunSpeed' type='hkReal' offset='180' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='400.000000'/>
+		<member name='WalkSpeed' type='hkReal' offset='184' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='80.000000'/>
+		<member name='MaxZRotationRun' type='hkReal' offset='188' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='30.000000'/>
+		<member name='MaxZRotationWalk' type='hkReal' offset='192' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='30.000000'/>
+		<member name='MaxTurnDeltaRun' type='hkReal' offset='196' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='90.000000'/>
+		<member name='MaxTurnDeltaWalk' type='hkReal' offset='200' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='90.000000'/>
+		<member name='IN_Speed' type='hkReal' offset='204' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='SpringZ' type='struct BSSpringState' ctype='BSSpringState' offset='208' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='parentOfBone0ToCOMIndices' type='hkArray&lt;void&gt;' offset='232' vtype='TYPE_ARRAY' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

@@ -1,0 +1,62 @@
+<class name='BSDirectAtModifier' version='3' signature='0xcda56038' parent='hkbModifier'>
+	<enums>
+		<enum name='TARGET' flags='00000000'>
+			<enumitem name='AppSupplied' value='0'/>
+			<enumitem name='Camera' value='1'/>
+		</enum>
+		<enum name='CONTEXT' flags='00000000'>
+			<enumitem name='None' value='0'/>
+			<enumitem name='BlockAnticipate' value='1'/>
+			<enumitem name='BowAttack' value='2'/>
+			<enumitem name='GunAttack' value='3'/>
+			<enumitem name='MagicAttack' value='4'/>
+		</enum>
+	</enums>
+	<members>
+		<member name='directAtOn' type='hkBool' offset='88' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='target' type='enum TARGET' etype='TARGET' offset='89' vtype='TYPE_ENUM' vsubtype='TYPE_INT8' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='context' type='enum CONTEXT' etype='CONTEXT' offset='90' vtype='TYPE_ENUM' vsubtype='TYPE_INT8' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='sourceBoneIndex' type='hkInt16' offset='92' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='offsetsCharacterRelative' type='hkBool' offset='94' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='startBoneIndex' type='hkInt16' offset='96' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='endBoneIndex' type='hkInt16' offset='98' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='limitHeadingDegreesCCW' type='hkReal' offset='100' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='90.000000'/>
+		<member name='limitHeadingDegreesCW' type='hkReal' offset='104' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='90.000000'/>
+		<member name='limitPitchDegreesUp' type='hkReal' offset='108' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='90.000000'/>
+		<member name='limitPitchDegreesDown' type='hkReal' offset='112' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='90.000000'/>
+		<member name='onGain' type='hkReal' offset='116' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.050000'/>
+		<member name='offGain' type='hkReal' offset='120' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.050000'/>
+		<member name='onLeadIn' type='hkReal' offset='124' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='1.000000'/>
+		<member name='offLeadIn' type='hkReal' offset='128' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='1.000000'/>
+		<member name='initialHeadingOffset' type='hkReal' offset='132' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='initialPitchOffset' type='hkReal' offset='136' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='initialGain' type='hkReal' offset='140' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='allowSourceBonePoseCapture' type='hkBool' offset='144' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='true'/>
+		<member name='sourceBonePoseCaptureBlendGain' type='hkReal' offset='148' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.050000'/>
+		<member name='useCurrentSourceBonePoseEventId' type='hkInt32' offset='152' vtype='TYPE_INT32' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='counteractSourceBoneWorldSpaceDelta' type='hkBool' offset='156' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='snapToTargetEventId' type='hkInt32' offset='160' vtype='TYPE_INT32' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='-1'/>
+		<member name='directAtCameraX' type='hkReal' offset='164' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='directAtCameraY' type='hkReal' offset='168' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='directAtCameraZ' type='hkReal' offset='172' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='drawDebugInfo' type='hkBool' offset='176' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='active' type='hkBool' offset='177' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='false'/>
+		<member name='currentHeadingOffset' type='hkReal' offset='180' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='currentPitchOffset' type='hkReal' offset='184' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='currentGain' type='hkReal' offset='188' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE' default='0.000000'/>
+		<member name='firstModify' type='hkBool' offset='192' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='headingOffset' type='hkReal' offset='196' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='pitchOffset' type='hkReal' offset='200' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='buseSourceBonePoseCapture' type='hkBool' offset='204' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='sourceBonePoseGain' type='hkReal' offset='208' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='sourceBonePoseCapture' type='hkQsTransform' offset='224' vtype='TYPE_QSTRANSFORM' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='sourceBonePose' type='hkQsTransform' offset='272' vtype='TYPE_QSTRANSFORM' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='sourceBoneDirWS' type='hkVector4' offset='320' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='snapToTarget' type='hkBool' offset='336' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='timeStep' type='hkReal' offset='340' vtype='TYPE_REAL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='directAtTarget' type='hkBool' offset='344' vtype='TYPE_BOOL' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='targetLocation' type='hkVector4' offset='352' vtype='TYPE_VECTOR4' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='worldTransform' type='hkQsTransform' offset='368' vtype='TYPE_QSTRANSFORM' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='boneChainIndices' type='hkArray&lt;void&gt;' offset='416' vtype='TYPE_ARRAY' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>

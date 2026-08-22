@@ -1,0 +1,6 @@
+<class name='BSModifyOnceModifier' version='1' signature='0x14f075d2' parent='hkbModifier'>
+	<members>
+		<member name='pOnActivateModifier' type='struct hkbModifier*' ctype='hkbModifier' offset='96' vtype='TYPE_POINTER' vsubtype='TYPE_STRUCT' arrsize='0' flags='ALIGN_16'/>
+		<member name='pOnDeactivateModifier' type='struct hkbModifier*' ctype='hkbModifier' offset='112' vtype='TYPE_POINTER' vsubtype='TYPE_STRUCT' arrsize='0' flags='ALIGN_16'/>
+	</members>
+</class>

@@ -1,0 +1,10 @@
+<class name='BSLimbCycleModifier' version='0' signature='0x3413bac0' parent='hkbModifier'>
+	<members>
+		<member name='limbBoneIndexA' type='struct hkbBoneIndexArray*' ctype='hkbBoneIndexArray' offset='88' vtype='TYPE_POINTER' vsubtype='TYPE_STRUCT' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='EventCycleLeft' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='96' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='EventCycleRight' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='112' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='EventCycleReset' type='struct hkbEventProperty' ctype='hkbEventProperty' offset='128' vtype='TYPE_STRUCT' vsubtype='TYPE_VOID' arrsize='0' flags='FLAGS_NONE'/>
+		<member name='boneChainIndexA' type='hkArray&lt;void&gt;' offset='144' vtype='TYPE_ARRAY' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+		<member name='iFrontIndex' type='hkInt16' offset='160' vtype='TYPE_INT16' vsubtype='TYPE_VOID' arrsize='0' flags='SERIALIZE_IGNORED'/>
+	</members>
+</class>
